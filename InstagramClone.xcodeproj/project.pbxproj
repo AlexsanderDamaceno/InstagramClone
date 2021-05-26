@@ -14,6 +14,7 @@
 		BA218D9C265C74930065983C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA218D9A265C74930065983C /* LaunchScreen.storyboard */; };
 		BA218DB0265C77D80065983C /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA218DAF265C77D80065983C /* LoginController.swift */; };
 		BA218DB3265C79040065983C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA218DB2265C79040065983C /* Extensions.swift */; };
+		BA218DB7265DCDB90065983C /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA218DB6265DCDB90065983C /* SignUpController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		BA218D9D265C74930065983C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA218DAF265C77D80065983C /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		BA218DB2265C79040065983C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BA218DB6265DCDB90065983C /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				BA218DAF265C77D80065983C /* LoginController.swift */,
+				BA218DB6265DCDB90065983C /* SignUpController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA218DB7265DCDB90065983C /* SignUpController.swift in Sources */,
 				BA218D90265C74900065983C /* AppDelegate.swift in Sources */,
 				BA218DB0265C77D80065983C /* LoginController.swift in Sources */,
 				BA218D92265C74900065983C /* SceneDelegate.swift in Sources */,
