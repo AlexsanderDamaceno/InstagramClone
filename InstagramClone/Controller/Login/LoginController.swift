@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Firebase
 
 
 
@@ -54,10 +54,34 @@ class LoginController: UIViewController {
           button.setTitleColor(.white, for: .normal)
           button.backgroundColor = UIColor(red: 51/255, green: 153/255, blue: 255/255, alpha: 1)
           button.layer.cornerRadius = 10
+          button.addTarget(self, action: #selector(login_action), for: .touchUpInside)
+        
          
           return button
       }()
+    
+    @objc func  login_action(){
+              guard let email     = emailTextField.text  else { return }
+              guard let password  = PasswordTextField.text  else { return }
+            
+              
         
+
+              
+              Auth.auth().signIn(withEmail: email, password: password){ (user , error) in
+                      if let error = error {
+                          print("error creating user: \(error)")
+                          return
+                    
+                      }
+                      let mainBar  = MainTabController()
+                      mainBar.modalPresentationStyle = .fullScreen
+                      self.present(mainBar , animated: true , completion: nil)
+                
+        }
+    }
+        
+
       
       let dontHaveAccountButton: UIButton = {
           let button = UIButton(type: .system)
